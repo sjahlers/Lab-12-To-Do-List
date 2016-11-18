@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Arima+Madurai|Lobster" rel="stylesheet">
+	<title>To Do List</title>
+</head>
+
+<body ng-app="toDoModule" ng-controller="toDoController">
+	<div id = "container">
+		<h1>To Do List</h1>
+		
+		<input type="text" placeholder="Search" ng-model="searchMyChores"/>
+				
+		<!-- <ul>
+			<li ng-repeat="chore in chores | filter: searchMyChores">{{chore}}</li>
+		</ul> -->
+		
+		<div id = "checklist">
+			<label id = "todoitem" ng-repeat="chore in chores | filter: searchMyChores track by $index">
+				<input type="checkbox" checklist-model="chores" checklist-value="chore" ng-click="removeItem(chore)"> {{chore}}</br>
+			</label>
+		</div>
+		
+		<form>
+			<input type = "text" placeholder="Item" ng-model="itemToAdd"/>
+			<input type = "submit" id = "button" value="Add To List" ng-click="addToList()"/>
+		</form>
+			
+		<img src="panther.jpg"/>
+	</div><!--End of container-->
+	
+<script src="angular.min.js"></script>
+<script src="mymodule.js"></script>
+</body>
+</html>

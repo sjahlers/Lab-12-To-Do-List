@@ -1,0 +1,86 @@
+body {
+	margin: 40px;
+	background-color: #E1D98B; /*yellow*/
+	font-family: 'Arima Madurai', cursive;
+}
+
+#container {
+	padding: 5px;
+	background-color: #C1DBC0; /*light green*/
+	border-radius: 10px;
+	border: 5px dotted #8E0038;
+	width: 40%;
+	text-align: center;
+	margin: auto;
+}
+
+img {
+	width: 75%;
+	border-radius: 5px;
+	box-shadow: 5px 5px #8E0038; /*dark pink*/
+	margin: 20px;
+}
+
+h1 {
+	color: #8E0038;
+	font-family: 'Lobster', cursive;
+	font-size: 3em;
+}
+
+/* ul {
+	width: 80%;
+	text-align: left;
+	margin: auto;
+}
+
+li {
+	font-size: 1.25em;
+} */
+
+#checklist {
+	text-align: left;
+	width: 80%;
+	margin: auto;
+}
+
+#todoitem {
+	font-size: 1.25em;
+	text-align: left;
+}
+
+input[type=checkbox] {
+	transform: scale(1.5);
+}
+
+input[type=submit]{
+	font-family: 'Arima Madurai', cursive;
+	font-size: 1.25em;
+	padding: 3px;
+	margin: 10px;
+	width: 80%;
+}
+
+input[type=text]{
+	font-family: 'Arima Madurai', cursive;
+	font-size: 1.25em;
+	padding: 3px;
+	margin: 10px;
+	width: 80%;
+}
+
+#button {
+	background-color: #DB568B; /*medium pink*/
+	color: white;
+	box-shadow: 2px 2px #8E0038;
+}
+
+#button:hover {
+	background-color: #DB9AAE; /*light pink*/
+}
+
+@media(max-width:1000px) {
+	#container {
+		width: 80%;
+	}
+	
+}
