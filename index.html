@@ -18,7 +18,7 @@
 		
 		<div id = "checklist">
 			<label id = "todoitem" ng-repeat="chore in chores | filter: searchMyChores track by $index">
-				<input type="checkbox" checklist-model="chores" checklist-value="chore" ng-click="removeItem(chore)"> {{chore}}</br>
+				<input type="checkbox" ng-click="removeItem(chore)"> {{chore}}</br>
 			</label>
 		</div>
 		
